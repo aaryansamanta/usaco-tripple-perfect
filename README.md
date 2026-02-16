@@ -10,10 +10,10 @@
 - **Silver → Gold Promotion** (Perfect 1000/1000)  
 - Then **Gold Division Perfect Score** → Dual Perfect
 
-#### Silver Division (Perfect Score → Promoted to Gold)
+### Silver Division (Perfect Score → Promoted to Gold)
 <img alt="image" src="https://github.com/aaryansamanta/usaco-dual-perfect/blob/main/USACO%20Silver%20Perfect%20Score%20%26%20Promo%20to%20Gold.png" />
 
-#### Bronze Division (Perfect Score → Promoted to Silver)
+### Bronze Division (Perfect Score → Promoted to Silver)
 <img alt="image" src="https://github.com/aaryansamanta/usaco-dual-perfect/blob/main/USACO%20Bronze%20Perfect%20Score%20%26%20Promo%20to%20Silver.png" />
 
 **Problems Solved (All AC, full points):**
