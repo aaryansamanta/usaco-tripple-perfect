@@ -8,10 +8,14 @@
 - **Silver → Gold Promotion** (Perfect 1000/1000)  
 
 ### Silver Division (Perfect Score → Promoted to Gold)
-<img alt="image" height="450" src="https://github.com/aaryansamanta/usaco-dual-perfect/blob/main/assets/Promo%20Screenshot%20%7C%20USACO%20Silver%20Perfect%20Score%20%7C%20Promo%20to%20Gold.png" />
+<img alt="image" height="500" src="https://github.com/aaryansamanta/usaco-dual-perfect/blob/main/assets/Promo%20Screenshot%20%7C%20USACO%20Silver%20Perfect%20Score%20%7C%20Promo%20to%20Gold.png" />
+
+
+
+
 
 ### Bronze Division (Perfect Score → Promoted to Silver)
-<img alt="image" height="450" src="https://github.com/aaryansamanta/usaco-dual-perfect/blob/main/assets/Promo%20Screenshot%20%7C%20USACO%20Bronze%20Perfect%20Score%20%7C%20Promo%20to%20Silver.png" />
+<img alt="image" height="500" src="https://github.com/aaryansamanta/usaco-dual-perfect/blob/main/assets/Promo%20Screenshot%20%7C%20USACO%20Bronze%20Perfect%20Score%20%7C%20Promo%20to%20Silver.png" />
 
 **Silver Divison Problems Solved (full points):**
 1. [Sequence Construction](https://usaco.org/index.php?page=viewproblem2&cpid=1518) — `silver/usaco_silver_1_mar2025.cpp` 
