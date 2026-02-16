@@ -1,4 +1,4 @@
-# 🏆 USACO 2025 US Open — **Dual Perfect** (Gold + Silver)
+# 🏆 USACO 2025 US Open — **Dual Perfect**
 
 **1000/1000 to Silver • 1000/1000 to Gold**  
 **1 of only 8 U.S. high schoolers nationwide** (per official results)
