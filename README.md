@@ -1,50 +1,133 @@
-# 🏆 USACO 2025 US Open — **Dual Perfect**
+<div align="center">
 
-**1000/1000 to Silver • 1000/1000 to Gold**  
-**1 of only 8 U.S. high schoolers nationwide** (per official results)
+<img src="assets/banner.png" alt="USACO 2026 Second Contest Study Guide: Bronze, Silver, Gold" width="100%">
 
-### 🏅 Achievement Highlights
-- **Silver → Gold Promotion** (Perfect 1000/1000)  
-- **Bronze → Silver Promotion** (Perfect 1000/1000)  
+# USACO 2026 Second Contest: Study Guide
 
-### 🏅 Silver Division (Perfect Score → Promoted to Gold)
-<img alt="image" height="500" src="https://github.com/aaryansamanta/usaco-dual-perfect/blob/main/assets/Promo%20Screenshot%20%7C%20USACO%20Silver%20Perfect%20Score%20%7C%20Promo%20to%20Gold.png" />
+**Nine problems. Clear explanations. Clean C++17 solutions. Every one checked against the official test data.**
 
-### 🏅 Bronze Division (Perfect Score → Promoted to Silver)
-<img alt="image" height="500" src="https://github.com/aaryansamanta/usaco-dual-perfect/blob/main/assets/Promo%20Screenshot%20%7C%20USACO%20Bronze%20Perfect%20Score%20%7C%20Promo%20to%20Silver.png" />
+![C++17](https://img.shields.io/badge/C%2B%2B-17-00599C?logo=cplusplus&logoColor=white)
+![Problems](https://img.shields.io/badge/problems-9-blueviolet)
+![Official tests](https://img.shields.io/badge/official%20tests-all%20passing-brightgreen)
+![Stress tested](https://img.shields.io/badge/brute--force-stress%20tested-orange)
+![License](https://img.shields.io/badge/license-MIT-lightgrey)
 
-** ⚙️ Silver Divison Problems Solved (full points):**
-1. [Sequence Construction](https://usaco.org/index.php?page=viewproblem2&cpid=1518) — `silver/usaco_silver_1_mar2025.cpp` 
-2. [Compatible Pairs](https://usaco.org/index.php?page=viewproblem2&cpid=1519) — `silver/usaco_silver_2_mar2025.cpp` 
-3. [Ski Slope](https://usaco.org/index.php?page=viewproblem2&cpid=1520) — `silver/usaco_silver_3_mar2025.cpp`
+[🥉 Bronze](bronze/) · [🥈 Silver](silver/) · [🥇 Gold](gold/) · [🧪 How it's verified](#-how-its-verified) · [🚀 Quick start](#-quick-start)
 
-** ⚙️ Bronze Division Problems Solved (full points):**
-1. [Hoof Paper Scissors Minus One](https://usaco.org/index.php?page=viewproblem2&cpid=1515) — `bronze/usaco_bronze_1_mar2025.cpp`
-2. [More Cow Photos](https://usaco.org/index.php?page=viewproblem2&cpid=1516) — `bronze/usaco_bronze_2_mar2025.cpp`
-3. [It's Mooin' Time III](https://usaco.org/index.php?page=viewproblem2&cpid=1517) — `bronze/usaco_bronze_3_mar2025.cpp`
+</div>
 
-### 🗂️ Repo Structure
-├── silver/
+---
 
-                │   ├── usaco_silver_1_mar2025.cpp
+## Why this repo?
 
-                │   ├── usaco_silver_2_mar2025.cpp
+Most contest repos are a pile of code. This one is a **study guide**: for every problem you get the *one key insight* that unlocks it, the reasoning behind the algorithm, the pitfalls that cost points, and a short, commented solution you can read in a few minutes. Solutions are written for clarity first and verified for correctness, so you can trust what you learn from them.
 
-                │   └── usaco_silver_3_mar2025.cpp
+**Good for:** students moving Bronze → Silver → Gold, coaches looking for worked examples, and anyone who wants to see *how* to test a solution properly.
 
-├── bronze/
+## 📚 The problems
 
-                │   ├── usaco_bronze_1_mar2025.cpp
+Official contest page: [USACO 2026 Second Contest results](https://usaco.org/index.php?page=season26contest2results) (statements, analyses and test data).
 
-                │   ├── usaco_bronze_2_mar2025.cpp
+| Div | # | Problem | Key idea | Time | Write-up | Code |
+|:---:|:-:|---------|----------|:----:|:--------:|:----:|
+| 🥉 | 1 | It's Mooin' Time IV | Suffix XOR is invertible → always YES | O(N) | [notes](bronze/1-mooin-time-iv/) | [cpp](bronze/1-mooin-time-iv/solution.cpp) |
+| 🥉 | 2 | Moo Hunt | Bitmask boards + subset-sum (SOS) DP | O(N²·2ᴺ) | [notes](bronze/2-moo-hunt/) | [cpp](bronze/2-moo-hunt/solution.cpp) |
+| 🥉 | 3 | Purchasing Milk | Normalise prices, greedy on binary | O(N+31Q) | [notes](bronze/3-purchasing-milk/) | [cpp](bronze/3-purchasing-milk/solution.cpp) |
+| 🥈 | 1 | Cow-libi 2 | Claims mean "same owner?" → cyclic bit string | O(N) | [notes](silver/1-cow-libi-2/) | [cpp](silver/1-cow-libi-2/solution.cpp) |
+| 🥈 | 2 | Declining Invitations | Amortised repair chains + monotone pointers | O(N+C+Σnᵢ) | [notes](silver/2-declining-invitations/) | [cpp](silver/2-declining-invitations/solution.cpp) |
+| 🥈 | 3 | Farmer John Loves Rotations | Circle walk `l+r+min(l,r)`, two pointers + deques | O(N) | [notes](silver/3-fj-loves-rotations/) | [cpp](silver/3-fj-loves-rotations/solution.cpp) |
+| 🥇 | 1 | Balancing the Barns | Binary search + convex inner search, `__int128` | O(N·log²) | [notes](gold/1-balancing-the-barns/) | [cpp](gold/1-balancing-the-barns/solution.cpp) |
+| 🥇 | 2 | Lexicographically Smallest Path | Greedy word over vertex sets, ≤ 26 phases | O(26(N+M)) | [notes](gold/2-lex-smallest-path/) | [cpp](gold/2-lex-smallest-path/solution.cpp) |
+| 🥇 | 3 | The Chase | Rests first; rotating frame on the cycle | O(N) | [notes](gold/3-the-chase/) | [cpp](gold/3-the-chase/solution.cpp) |
 
-                │   └── usaco_bronze_3_mar2025.cpp
+## 🧠 Techniques you'll practise
 
-├── assets/     
+| Technique | Where |
+|-----------|-------|
+| Parity / XOR identities, difference arrays | Bronze 1 |
+| Bitmask enumeration, SOS (subset-sum) DP | Bronze 2 |
+| Greedy with a normalised cost structure | Bronze 3 |
+| Reducing a story to a clean combinatorial claim | Silver 1 |
+| Offline processing, amortised analysis, monotone pointers | Silver 2 |
+| Two pointers, sliding-window minimum on a circle | Silver 3 |
+| Binary search on the answer, convexity, 128-bit arithmetic | Gold 1 |
+| Automata / subset simulation, parity BFS | Gold 2 |
+| Functional graphs, multi-source BFS, modular "frames" | Gold 3 |
 
-                │   ├── Promo Screenshot | USACO Silver Perfect Score | Promo to Gold
+## 🚀 Quick start
 
-                │   ├── Promo Screenshot | USACO Bronze Perfect Score | Promo to Silver
+```bash
+git clone https://github.com/<your-username>/<this-repo>.git
+cd <this-repo>
 
+# compile and run one solution
+g++ -O2 -std=c++17 -o moo bronze/2-moo-hunt/solution.cpp
+./moo < bronze/2-moo-hunt/samples/1.in
 
-├── README.md
+# run every solution on the bundled samples
+./tools/run_samples.sh
+```
+
+Requirements: a C++17 compiler (`g++`) and Python 3.8+ for the tools. No other dependencies.
+
+## 🧪 How it's verified
+
+Each solution was checked in two independent ways.
+
+**1. Official test data.** Every solution passes **all** official test cases (9 of 9 problems). `tools/check_official.py` runs a solution on a folder of `N.in` / `N.out` files; for the two problems with many valid answers (Bronze 1 and Silver 1, which print a construction) it *simulates* the printed answer instead of diffing it. Slowest official case per problem (worst of two runs in a sandbox; your machine will differ, and USACO's limits are several seconds):
+
+| Problem | B1 | B2 | B3 | S1 | S2 | S3 | G1 | G2 | G3 |
+|---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| Slowest case | 0.01 s | 0.35 s | 0.01 s | 0.02 s | 0.15 s | 0.13 s | 0.34 s | 0.11 s | 0.12 s |
+
+**2. Brute-force stress tests.** `tools/stress.py` compares every solution with a slow, obviously-correct brute force on hundreds of random tiny inputs (all boards, all seatings, BFS over states, full state-space search for The Chase, and so on). The harness itself was mutation-tested: deliberately broken solutions are caught within a few random tests.
+
+```bash
+python3 tools/stress.py all          # 300 random tests per problem
+python3 tools/stress.py gold3 1000   # one problem, more tests
+```
+
+To run the official data yourself, download a problem's test-data zip from the link in its README, unzip it into a folder, then:
+
+```bash
+python3 tools/check_official.py gold3 path/to/gold3_data
+```
+
+## 🗂️ Repository layout
+
+```
+.
+├── bronze/ silver/ gold/
+│   └── <n>-<problem>/
+│       ├── README.md       idea, algorithm, pitfalls, takeaway
+│       ├── solution.cpp    commented reference solution
+│       └── samples/        sample inputs/outputs from the statement
+├── tools/
+│   ├── check_official.py   run against official data (with validators)
+│   ├── stress.py           brute-force + random-test comparison
+│   └── run_samples.sh      run all samples
+└── assets/                 banner and social-preview images
+```
+
+## 📖 How to get the most out of it
+
+1. Read the statement on USACO and **try it yourself first**, at least 20-30 minutes.
+2. If stuck, read only the *Key insight* section of the write-up and try again.
+3. Compare with the solution, then run the stress test on your own version.
+4. Read the [official analysis](https://usaco.org/index.php?page=season26contest2results) too: seeing two explanations of the same problem is a great way to learn.
+
+## 🤝 Contributing
+
+Found a bug, a clearer explanation, or an alternative approach? Issues and pull requests are welcome. Good contributions include a failing test case, a simpler proof, or a solution in another language. Please keep solutions readable and include a brute-force check when adding a new problem.
+
+## ⚖️ Credits and licence
+
+- Problem statements, official analyses and test data belong to [USACO](https://usaco.org) and their authors (this contest's problems are credited to Nick Wu, Alex Liang, Chongtian Ma, Rohin Garg, Daniel Zhu, Yash Belani and Benjamin Qi). This repository **links to** them and does not redistribute the statements or test data; the small `samples/` files are the examples printed in the statements.
+- The explanations, solutions and tools in this repository are released under the [MIT License](LICENSE).
+- This is an independent educational project and is not affiliated with USACO.
+
+<div align="center">
+
+If this guide helped you, a ⭐ helps other students find it.
+
+</div>
