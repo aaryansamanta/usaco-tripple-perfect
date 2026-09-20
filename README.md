@@ -1,10 +1,10 @@
 <div align="center">
 
-<img src="assets/banner.png" alt="USACO 2026 Second Contest Study Guide: Bronze, Silver, Gold" width="100%">
+<img src="assets/banner.png" alt="How to Get Triple Perfect on USACO: Bronze, Silver, Gold roadmap" width="100%">
 
-# USACO 2026 Second Contest: Study Guide
+# How to Get a Triple Perfect on USACO
 
-**Nine problems. Clear explanations. Clean C++17 solutions. Every one checked against the official test data.**
+**A Bronze → Silver → Gold roadmap, worked through on the USACO 2026 Second Contest: nine problems, clear explanations, clean C++17 solutions, all checked against the official test data.**
 
 ![C++17](https://img.shields.io/badge/C%2B%2B-17-00599C?logo=cplusplus&logoColor=white)
 ![Problems](https://img.shields.io/badge/problems-9-blueviolet)
@@ -12,7 +12,7 @@
 ![Stress tested](https://img.shields.io/badge/brute--force-stress%20tested-orange)
 ![License](https://img.shields.io/badge/license-MIT-lightgrey)
 
-[🥉 Bronze](bronze/) · [🥈 Silver](silver/) · [🥇 Gold](gold/) · [🧪 How it's verified](#-how-its-verified) · [🚀 Quick start](#-quick-start)
+[🎯 What is it?](#-what-is-a-triple-perfect) · [🗺️ Roadmap](#-the-roadmap) · [🥉 Bronze](bronze/) · [🥈 Silver](silver/) · [🥇 Gold](gold/) · [🧪 How it's verified](#-how-its-verified) · [🚀 Quick start](#-quick-start)
 
 </div>
 
@@ -20,9 +20,32 @@
 
 ## Why this repo?
 
-Most contest repos are a pile of code. This one is a **study guide**: for every problem you get the *one key insight* that unlocks it, the reasoning behind the algorithm, the pitfalls that cost points, and a short, commented solution you can read in a few minutes. Solutions are written for clarity first and verified for correctness, so you can trust what you learn from them.
+Most contest repos are a pile of code. This one is a **guide to the goal**: it walks through a full Bronze, Silver and Gold set so you can see what "perfect in every division" actually demands. For every problem you get the *one key insight* that unlocks it, the reasoning behind the algorithm, the pitfalls that cost points, and a short, commented solution you can read in a few minutes. Solutions are written for clarity first and verified for correctness, so you can trust what you learn from them.
 
 **Good for:** students moving Bronze → Silver → Gold, coaches looking for worked examples, and anyone who wants to see *how* to test a solution properly.
+
+## 🎯 What is a triple perfect?
+
+"Triple perfect" is community slang, not an official USACO title. It means scoring **1000 / 1000 in Bronze, Silver and Gold**, all three divisions, by solving every problem in each. USACO lets a strong contestant move up **within the same contest**: once you reach the promotion score in a division you can accept the promotion and start the next division's problems, so a single contest can take you from Bronze through Gold if you keep scoring high.
+
+It is hard because each division needs a different skill:
+
+| Division | What it rewards |
+|----------|-----------------|
+| 🥉 Bronze | Clean thinking, brute force done well, spotting identities (Bronze 1), bitmasks and greedy (Bronze 2-3) |
+| 🥈 Silver | Reducing a story to a precise claim, amortised analysis, two pointers (Silver 1-3) |
+| 🥇 Gold | Binary search with convexity, automata-style reasoning, graph structure (Gold 1-3) |
+
+## 🗺️ The roadmap
+
+1. **Master the fundamentals until they are automatic.** Sorting, prefix sums, BFS/DFS, binary search, bitmasks. Bronze and Silver points are lost to bugs far more often than to missing ideas.
+2. **Practise on past contests, timed.** Do a full division in the real time limit, then read the write-ups here and the official analysis.
+3. **Learn to test.** Write a brute force and a random generator for every problem ([`tools/stress.py`](tools/stress.py) shows how). Most wrong answers on hard problems are caught this way in minutes.
+4. **Grab partial credit deliberately.** Every problem has subtasks; a correct slower solution beats an unfinished perfect one.
+5. **Think about overflow and edge cases before you submit.** Gold 1 needs 128-bit arithmetic; Gold 3 needs iterative traversals; Silver 1 has a tiny-circle edge case.
+6. **Review every problem you miss.** Write down the *one insight* you lacked. The write-ups in this repo use exactly that format.
+
+> **Play by the rules.** USACO requires you to compete alone, use only language documentation, and not use AI tools, prewritten code or templates, or more than one account. A score only means something if it is earned this way, and violations can lead to disqualification. Use this repo to **learn before or after** a contest, never during one.
 
 ## 📚 The problems
 
@@ -128,6 +151,6 @@ Found a bug, a clearer explanation, or an alternative approach? Issues and pull 
 
 <div align="center">
 
-If this guide helped you, a ⭐ helps other students find it.
+If this roadmap helped you, a ⭐ helps other students find it.
 
 </div>
